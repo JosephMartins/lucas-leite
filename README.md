@@ -1,7 +1,7 @@
 
 
 
-<blockquote align="center">Landing page feita para Lucas Leite para captura de leads</blockquote>
+<blockquote align="center">Landing page feita para Lucas Leite.  Com o objetivo de captura de leads</blockquote>
 
 
 <h4>Tecnologias Utilizadas</h4>
