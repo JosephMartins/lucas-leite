@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Ablation';
+  src: url('./Ablation.otf') format("truetype")
+}
+
+@font-face {
+  font-family: 'Ablation Light';
+  src: url('./Ablation\ Light.otf') format("truetype")
+}
+
