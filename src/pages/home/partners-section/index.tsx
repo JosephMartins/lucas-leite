@@ -10,6 +10,7 @@ import {
   PersonAvatar,
   AboutCard,
 } from "./styles";
+import { Button } from "../../../components/button";
 
 export function PartnersSection() {
   return (
@@ -19,12 +20,10 @@ export function PartnersSection() {
           <InfoCard>
             <PersonAvatar>
               <img src={adv1} alt="logo lucas leite" />
-
               <strong>Araújo e Diniz</strong>
             </PersonAvatar>
 
             <ul>
-            
               <li><strong>Araújo e Diniz</strong></li>
               <li>Direito Empresarial</li>
               <li>Direito Tributário</li>
@@ -64,7 +63,7 @@ export function PartnersSection() {
 
 
           <a href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Gostaria+de+falar+com+um+advogado+especialista" target="_blank">
-            <button>QUERO FALAR COM UM ESPECIALISTA</button>
+            <Button>QUERO FALAR COM UM ESPECIALISTA</Button>
           </a>
         </WrapperCard>
 
@@ -73,11 +72,11 @@ export function PartnersSection() {
           <h1>PARCEIROS</h1>
 
           <p>
-          Nossa equipe de advogados altamente capacitados está sempre pronta para orientar e conduzir o processo de maneira eficiente, objetiva e respeitando a subjetividade de cada cliente.
+            Nossa equipe de advogados altamente capacitados está sempre pronta para orientar e conduzir o processo de maneira eficiente, objetiva e respeitando a subjetividade de cada cliente.
           </p>
 
           <a href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Gostaria+de+falar+com+um+advogado+especialista" target="_blank">
-            <button>QUERO FALAR COM UM ESPECIALISTA</button>
+            <Button>QUERO FALAR COM UM ESPECIALISTA</Button>
           </a>
         </AboutCard>
       </Content>

@@ -7,7 +7,6 @@ interface WrapperProps {
 export const Container = styled.div`
   background: transparent;
   justify-self: baseline;
-
   position: absolute;
   top: 0;
   left: 50%;
@@ -97,6 +96,12 @@ export const Wrapper = styled.div<WrapperProps>`
         position: relative;
         transition: 0.2s;
         cursor: pointer;
+        border-bottom: 4px solid transparent;
+
+        &:hover {
+          border-bottom: 4px solid #736750;
+          font-weight: 600;
+        }
 
         @media (max-width: 920px) {
           border: 1px solid #736750;

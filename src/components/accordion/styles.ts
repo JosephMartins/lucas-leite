@@ -12,26 +12,33 @@ export const Container = styled.div<ContainerProps>`
   background: #736750;
   border-radius: 30px;
   margin-bottom: 1rem;
-
   display: ${(props) => (props.show ? "block" : "none")};
 
-  padding: 1.5rem 2rem;
-  @media (max-width: 900px) {
-    padding: 1rem;
-  }
+  
 `;
 
 export const HeaderAccordion = styled.div`
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  gap: 1rem;
+  gap: 1.125rem;
+  height: 78px;
+  padding: 0 2rem;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  transition: .6s;
 
   span {
     display: flex;
     gap: 1rem;
     align-items: center;
     color: #fff;
+    font-size: 1.25rem;
+
+    img{
+      width: 46px;
+height: 46px;
+    }
 
     strong {
       font-weight: 400;
@@ -48,27 +55,68 @@ export const HeaderAccordion = styled.div`
     span:first-child {
     }
   }
+
+  &.active:hover {
+    background: #736750;
+
+    span {
+      color: #fff;
+
+      img{
+        filter: initial;
+
+
+      }
+
+      strong {
+        color: #fff;
+      }
+    }
+  }
+
+  &:hover {
+    background: #fff;
+    border: 1px solid #736750;
+
+    span {
+      color: #736750;
+
+      img{
+        filter: invert(39%) sepia(4%) saturate(3921%) hue-rotate(1deg) brightness(89%) contrast(61%);
+
+
+      }
+
+      strong {
+        color: #736750;
+      }
+    }
+  }
 `;
 export const BodyAccordion = styled.div<BodyAccordionProps>`
   overflow: hidden;
   transition: 0.6s;
   max-height: 0;
+  padding: 0 2.625rem 0 2rem;
 
   ${(props) =>
     props.showBody &&
     css`
-      max-height: 500px;
+      max-height: 700px;
     `}
 
   p {
     color: #fff;
-    margin: 2rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
+    font-size: 17px;
   }
 
-  ul{
+  ul {
     color: #fff;
     margin-bottom: 2rem;
+    margin-left: 1.5rem;
     list-style: disc !important;
+    font-size: 17px;
   }
 
   strong {
@@ -82,20 +130,8 @@ export const BodyAccordion = styled.div<BodyAccordionProps>`
     margin-left: auto;
     display: table;
     border-radius: 100px;
-
-    background: #b28c00;
-
-    color: #fff;
+    height: 48px;
+    margin-bottom: 3.375rem;
     text-transform: uppercase;
-    height: 42px;
-    border: 0;
-    font-weight: 600;
-    padding: 0 2rem;
-    font-size: 1rem;
-    transition: 0.2s;
-
-    &:hover {
-      filter: brightness(0.9);
-    }
   }
 `;

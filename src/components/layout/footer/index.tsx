@@ -9,7 +9,7 @@ export function Footer() {
 
       <Content>
         <figure>
-          <img src={logoPng} alt="logo lucas leite" />
+          <img src={logoPng} alt="logo lucas leite"   width={300} height={200}/>
         </figure>
 
         <ul>

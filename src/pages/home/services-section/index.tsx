@@ -6,6 +6,7 @@ import iconLup from "../../../assets/imgs/icons/lup.svg";
 import iconJudi from "../../../assets/imgs/icons/judicial.svg";
 import iconExtrajudicial from "../../../assets/imgs/icons/extrajudicial.svg";
 import Accordion from "../../../components/accordion";
+import { Button } from "../../../components/button";
 
 export default function ServicesSection() {
   const [showAccordion, setShowAccordion] = useState<number | null>(null);
@@ -34,7 +35,7 @@ export default function ServicesSection() {
             e eficiente e tendo sempre em mente a subjetividade e a necessidade
             do cliente.
           </p>
-
+          
           <p>
             Para tanto, trabalhamos de maneira integrada, usufruindo de
             ferramentas tecnológicas e sistemas de integração que visam garantir
@@ -73,26 +74,37 @@ export default function ServicesSection() {
                   Anticrese);
                 </li>
               </ul>
-              <a href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Quero+falar+sobre+DUE+DILIGENCE" target="_blank">
-                <button type="button">Fale agora</button>
+              <a
+                href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Quero+falar+sobre+DUE+DILIGENCE"
+                target="_blank"
+              >
+                <Button minWidth="247px">Fale agora</Button>
               </a>
             </>
           </Accordion>
           <Accordion
             iconHeader={iconConsultoria}
-            textHeader="Direito imobiliário"
+            textHeader="CONSULTORIA/ ASSESSORIA"
             show={showAccordion !== 2 && showAccordion !== null ? false : true}
             onClick={() => toggleShowAccordion(2)}
           >
             <>
               <p>
-              Com atendimento humanizado, buscamos apresentar as implicações legais dos atos, sugerir adequações contratuais para garantirmos a conformidade legal, encaminhar o devido ato cartorário, dentre outros, sempre com um olhar preventivo e visando evitar a judicialização das relações jurídicas para maior celeridade na solução dos conflitos. Ainda, trabalhamos com a elaboração e revisão de Contratos Imobiliários, tais como:
-
+                Com atendimento humanizado, buscamos apresentar as implicações
+                legais dos atos, sugerir adequações contratuais para garantirmos
+                a conformidade legal, encaminhar o devido ato cartorário, dentre
+                outros, sempre com um olhar preventivo e visando evitar a
+                judicialização das relações jurídicas para maior celeridade na
+                solução dos conflitos. Ainda, trabalhamos com a elaboração e
+                revisão de Contratos Imobiliários, tais como:
               </p>
 
               <ul>
                 <li>Contrato de Compra e Venda;</li>
-                <li>Contrato de Promessa de Compra e Venda (com ou sem reserva de locação);</li>
+                <li>
+                  Contrato de Promessa de Compra e Venda (com ou sem reserva de
+                  locação);
+                </li>
                 <li>Contrato de Comodato;</li>
                 <li>Contrato de Permuta</li>
                 <li>Contrato de Locação Residencial;</li>
@@ -102,40 +114,66 @@ export default function ServicesSection() {
                 <li>Contrato de Incorporação Imobiliária;</li>
                 <li>Contrato de Arrendamento Rural;</li>
               </ul>
-              <a href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Quero+falar+sobre+CONSULTORIA%2F+ASSESSORIA" target="_blank">
-              <button>Fale agora</button>
+              <a
+                href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Quero+falar+sobre+CONSULTORIA%2F+ASSESSORIA"
+                target="_blank"
+              >
+                <Button minWidth="247px">Fale agora</Button>
               </a>
             </>
           </Accordion>
 
           <Accordion
             iconHeader={iconExtrajudicial}
-            textHeader="Consultoria Jurídica"
+            textHeader="EXTRAJUDICIAL"
             show={showAccordion !== 3 && showAccordion !== null ? false : true}
             onClick={() => toggleShowAccordion(3)}
           >
             <>
               <p>
-                Falta aqui
+                Como a principal forma de atuação da Lucas Leite - Sociedade
+                Individual de Advocacia, busca-se aplicar uma advocacia
+                contrária aos processos conservadores e litigantes, seja por
+                meio da realização de diligências e medidas administrativas e/ou
+                cartorárias, para que o cliente consiga a garantia de seus
+                direitos com celeridade, simplicidade e eficácia. Sempre
+                buscando a resolução dos conflitos de forma alternativa, com
+                foco no protagonismo das partes envolvidas e equilíbrio nas
+                relações sociais e negociais. Dentre os diversos atos e medidas,
+                realizamos também:
               </p>
-              <a href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Quero+falar+sobre+servi%C3%A7o+EXTRAJUDICIAL" target="_blank">
-
-              <button>Fale agora</button>
+              <ul>
+                <li>Inventário Extrajudicial</li>
+                <li>Regularização Fundiária Urbana e Rural</li>
+                <li>Alienação Fiduciária de Imóvel</li>
+                <li>Adjudicação Compulsória de Imóvel</li>
+                <li>Usucapião Extrajudicial</li>
+              </ul>
+              <a
+                href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Quero+falar+sobre+servi%C3%A7o+EXTRAJUDICIAL"
+                target="_blank"
+              >
+                <Button minWidth="247px">Fale agora</Button>
               </a>
-
             </>
           </Accordion>
 
           <Accordion
             iconHeader={iconJudi}
-            textHeader="Notificação Extrajudicial"
+            textHeader="JUDICIAL"
             show={showAccordion !== 4 && showAccordion !== null ? false : true}
             onClick={() => toggleShowAccordion(4)}
           >
             <>
               <p>
-              Diante da negativa na resolução alternativa de conflito, seja pela composição amigável, seja pela negociação, trabalhamos com um processo de trabalho eficiente para que o cliente tenha a tutela de seus direitos garantidos frente ao Poder Judiciário, seja na 1ª ou 2ª Instância, sempre tendo ao norte as fontes do direito que regem o ordenamento jurídico brasileiro. Para tanto, dentre os diversas possibilidades de ações e atos para a tutela dos direitos, trabalhamos com:
-
+                Diante da negativa na resolução alternativa de conflito, seja
+                pela composição amigável, seja pela negociação, trabalhamos com
+                um processo de trabalho eficiente para que o cliente tenha a
+                tutela de seus direitos garantidos frente ao Poder Judiciário,
+                seja na 1ª ou 2ª Instância, sempre tendo ao norte as fontes do
+                direito que regem o ordenamento jurídico brasileiro. Para tanto,
+                dentre os diversas possibilidades de ações e atos para a tutela
+                dos direitos, trabalhamos com:
               </p>
 
               <ul>
@@ -144,11 +182,12 @@ export default function ServicesSection() {
                 <li>Inventário Judicial</li>
                 <li>Adjudicação Judicial</li>
               </ul>
-              <a href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Quero+falar+sobre+servi%C3%A7o+JUDICIAL" target="_blank">
-
-              <button>Fale agora</button>
+              <a
+                href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Quero+falar+sobre+servi%C3%A7o+JUDICIAL"
+                target="_blank"
+              >
+                <Button minWidth="247px">Fale agora</Button>
               </a>
-
             </>
           </Accordion>
         </Wrapper>

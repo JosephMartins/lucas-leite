@@ -22,7 +22,7 @@ export function Header() {
     <Container>
       <Content>
         <button onClick={handleShowMenu}>
-          <img src={iconMenu} alt="" />
+          <img src={iconMenu} alt="Icon menu" />
         </button>
 
        

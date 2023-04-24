@@ -8,10 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
   body {
     -webkit-font-smoothing: antialiased;
     font: 400 1rem 'Open Sans', sans-serif;
@@ -19,8 +19,7 @@ html {
   }
 
   h1,h2,h3,h4,h5{
-    font-family: 'Lato', sans-serif;
-font-family: 'Roboto', sans-serif;
+    font-family: 'Blinker', sans-serif;
   }
 
   button{
@@ -37,10 +36,10 @@ font-family: 'Roboto', sans-serif;
     }
   }
 
-@media(max-width: 720px){
-  html{
-    font-size: 87.5%;
+  @media(max-width: 720px){
+    html{
+      font-size: 87.5%;
+    }
   }
-}
-
 `;
+

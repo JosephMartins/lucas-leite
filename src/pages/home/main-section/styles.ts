@@ -6,8 +6,6 @@ import grafismSideRightBg from "../../../assets/imgs/backgrounds/main-section/gr
 export const Container = styled.div`
   background-image: url(${grafism});
   background-color: #cac0a7;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
   min-height: 100vh;
 
@@ -23,7 +21,7 @@ export const Content = styled.div`
 
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 40%;
+  grid-template-columns: 1fr 616px;
   gap: 1rem;
 
   @media (max-width: 920px) {
@@ -36,15 +34,9 @@ export const Content = styled.div`
 
 export const LeftSide = styled.div`
   position: relative;
-  padding: 0 77px;
+  padding: 0 102px 0 79px;
 
-  h1 {
-    font-weight: 200;
-    font-size: 42px;
-    line-height: 40px;
-    color: #fff;
-    margin-bottom: 2.375rem;
-  }
+ 
 
   p {
     color: #fff;
@@ -54,58 +46,14 @@ export const LeftSide = styled.div`
     line-height: 27px;
   }
 
-  button.contato {
-    background: #b28c00;
-    color: #fff;
-    text-transform: uppercase;
-    max-width: 358px;
-    width: 100%;
-    height: 42px;
-    border: 0;
-    border-radius: 100px;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: 0.2s;
-
-    &:hover {
-      filter: brightness(0.9);
-    }
-  }
 
   @media (max-width: 1180px) {
     padding: 1rem;
   }
  
 
-  @media (max-width: 920px) {
-    h1,
-    p {
-      text-align: center;
-    }
+ 
 
-   
-
-    button.contato {
-      display: table;
-      margin: 0 auto;
-    }
-  }
-
-  @media (max-width: 390px) {
-    padding: 1rem;
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 2.5rem;
-    }
-
-    p{
-      font-size: 1rem;
-      margin-bottom: 80px;
-    }
-
-    padding: 14px;
-  }
 `;
 
 export const MainContent = styled.div`
@@ -115,8 +63,45 @@ export const MainContent = styled.div`
   justify-content: center;
   height: 100%;
 
+  h1 {
+    font-weight: 200;
+    font-size: 42px;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 2.375rem;
+  }
+
+  @media (max-width: 920px) {
+    h1,
+    p {
+      text-align: center;
+    }
+
+
+    button.contato {
+      display: table;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 414px) {
+
+    h1 {
+      font-size: 2rem !important;
+      margin-bottom: 2.5rem;
+    }
+
+    p{
+      font-size: 1rem;
+      margin-bottom: 80px;
+    }
+  }
+
   a {
     text-decoration: none;
+    button{
+      height: 48px;
+    }
   }
 `;
 
@@ -189,7 +174,9 @@ export const SlideWrap = styled.div`
   align-items: center;
 
   img {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
   }
 
   h1 {

@@ -1,18 +1,25 @@
 import styled from "styled-components";
+import { SPACING } from "../../../styles/theme/default";
 
 export const Container = styled.section``;
 
 export const Content = styled.div`
   display: flex;
-  gap: 40px;
+  gap: 132px;
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto 50px auto;
   padding: 0 4rem;
+  margin: ${SPACING.SPACING_SECTION} auto 0 auto;
+
+  @media (max-width: 1220px) {
+    gap: 3rem;
+  }
 
   @media (max-width: 920px) {
     flex-direction: column-reverse;
     padding: 0 2rem;
+    margin: 143px auto 0 auto;
+    gap: 0;
   }
 
   @media (max-width: 390px) {
@@ -31,27 +38,6 @@ export const WrapperCard = styled.div`
   a {
     display: none;
     text-decoration: none;
-
-    button {
-      background: #b38c00;
-      border-radius: 100px;
-      padding: 13px;
-      color: #fff;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 22px;
-      max-width: 350px;
-      width: 100%;
-      text-align: center;
-      margin-top: 6rem;
-      display: table;
-      border: 0;
-      transition: 0.2s;
-
-      &:hover {
-        filter: brightness(0.9);
-      }
-    }
   }
 
   @media (max-width: 920px) {
@@ -73,20 +59,25 @@ export const WrapperCard = styled.div`
 export const InfoCard = styled.div`
   background: #736750;
   width: 100%;
-  padding: 2rem 1.5rem;
+  max-width: 597px;
+
+  padding: 33px 22px;
   border-radius: 16px;
 
   display: flex;
   align-items: center;
 
-  gap: 2rem;
+  gap: 36px;
+  height: 155px;
 
   ul {
     position: relative;
 
     li {
       color: #fff;
-      line-height: 22px;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 21.79px;
 
       strong {
         display: none;
@@ -98,8 +89,8 @@ export const InfoCard = styled.div`
       position: absolute;
       width: 2px;
       background: #fff;
-      left: -25px;
-      height: 90px;
+      height: 100px;
+      left: -18px;
       top: 50%;
       transform: translateY(-50%);
 
@@ -110,17 +101,19 @@ export const InfoCard = styled.div`
   }
 
   @media (max-width: 520px) {
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
 
     ul {
       li {
         font-size: 10px;
         margin-left: 0.6rem;
-
+        line-height: 14px;
+        list-style: disc;
         strong {
           display: table;
           font-size: 18px;
           margin-left: -0.6rem;
+          margin-bottom: 6px;
         }
       }
     }
@@ -131,11 +124,17 @@ export const PersonAvatar = styled.div`
   align-items: center;
   gap: 1.5rem;
 
+  img {
+    width: 93px;
+    height: 93px;
+  }
+
   strong {
     font-weight: 400;
     color: #fff;
-    max-width: 80px;
+    max-width: 84px;
     line-height: 25px;
+    font-size: 1.125rem;
   }
 
   @media (max-width: 520px) {
@@ -149,60 +148,43 @@ export const PersonAvatar = styled.div`
     }
   }
 `;
+
 export const AboutCard = styled.div`
   flex: 1;
   background: #fff;
-  border-radius: 16px;
+  border-radius: 1rem;
 
   position: relative;
 
   h1 {
-    margin-top: 12px;
     font-weight: 400;
     color: #736750;
-    margin-bottom: 5rem;
-    font-size: 40px;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
   }
 
   p {
     font-size: 1.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 8.125rem;
     color: #736750;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 27px;
+
+    max-width: 513px;
   }
 
   a {
     text-decoration: none;
-
-    button {
-      background: #b38c00;
-      border-radius: 100px;
-      padding: 13px;
-      color: #fff;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 22px;
-      width: 350px;
-      text-align: center;
-      margin-top: 6rem;
-      display: table;
-      border: 0;
-      transition: 0.2s;
-
-      &:hover {
-        filter: brightness(0.9);
-      }
-    }
   }
 
   @media (max-width: 920px) {
-    h1 {
-      margin-top: 142px;
-    }
-
     a {
       display: none;
+    }
+
+    p {
+      max-width: 100%;
+      margin-bottom: 55px;
     }
   }
 `;

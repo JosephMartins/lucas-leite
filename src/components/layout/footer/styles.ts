@@ -4,7 +4,7 @@ import bgFooter from "../../../assets/imgs/backgrounds/footer/bg.svg";
 
 export const Container = styled.div`
   background-color: #cac0a7;
-  
+
   background-image: url(${bgFooter});
   display: flex;
   align-items: center;
@@ -17,19 +17,27 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 170px;
-  
+
   width: 100%;
   max-width: 1440px;
   min-height: 410px;
   padding: 0 4rem;
   margin: 0 auto;
 
+  figure {
+    img {
+      max-width: 250px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
   ul {
     color: #736750;
     text-align: right;
 
     li {
-      margin-bottom: .875rem;
+      margin-bottom: 0.875rem;
       font-size: 1.25rem;
       font-weight: 300;
     }
@@ -47,9 +55,8 @@ export const Content = styled.div`
     justify-content: center;
     width: 100%;
 
-    ul{
-    text-align: center;
-
+    ul {
+      text-align: center;
     }
   }
 `;

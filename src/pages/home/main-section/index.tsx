@@ -21,6 +21,7 @@ import "@splidejs/react-splide/css/sea-green";
 
 // or only core styles
 import "@splidejs/react-splide/css/core";
+import { Button } from "../../../components/button";
 
 export function MainSection() {
   return (
@@ -38,7 +39,7 @@ export function MainSection() {
               href="https://wa.me/5561999719217?text=Ol%C3%A1%2C+vim+pelo+site%21+Quero+falar+com+um+advogado"
               target="_blank"
             >
-              <button className="contato">FALE CONOSCO</button>
+              <Button className="contato">FALE CONOSCO</Button>
             </a>
           </MainContent>
         </LeftSide>
@@ -56,14 +57,14 @@ export function MainSection() {
             >
               <SplideSlide>
                 <SlideWrap>
-                  <img src={logoPng} alt="Image 1" />
+                  <img src={logoPng} alt="Image 1" width={300} height={200} />
                   <h1>Lucas Leite</h1>
                   <p>Sociedade Unipessoal de Advocacia</p>
                 </SlideWrap>
               </SplideSlide>
               <SplideSlide>
                 <SlideWrap>
-                  <img src={logoPng} alt="Image 1" />
+                  <img src={logoPng} alt="Image 2"  width={300} height={200}  />
                   <h1>Lucas Leite</h1>
                   <p>Sociedade Unipessoal de Advocacia</p>
                 </SlideWrap>
@@ -71,7 +72,7 @@ export function MainSection() {
 
               <SplideSlide>
                 <SlideWrap>
-                  <img src={logoPng} alt="Image 1" />
+                  <img src={logoPng} alt="Image 3"   width={300} height={200} />
                   <h1>Lucas Leite</h1>
                   <p>Sociedade Unipessoal de Advocacia</p>
                 </SlideWrap>

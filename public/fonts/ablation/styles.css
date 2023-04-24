@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Ablation';
-  src: url('./Ablation.otf') format("truetype")
+  font-family: 'Blinker';
+  src: url('./Blinker-Black.ttf') format("truetype")
 }
 
 @font-face {
-  font-family: 'Ablation Light';
-  src: url('./Ablation\ Light.otf') format("truetype")
+  font-family: 'Blinker Light';
+  src: url('./Blinker-Light.ttf') format("truetype")
 }
 
